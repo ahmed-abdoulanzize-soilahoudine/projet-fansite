@@ -1,0 +1,51 @@
+body{
+     background-image: url(image/fond\ de\ site2.jpg); 
+    background-color: rgb(86, 207, 207);
+    background-blend-mode: overlay;
+}
+nav{
+    background-color: darkblue;
+    border-radius: 10px;
+    display: flex;   
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+h1{
+    color: #002fff;
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    font-family: monospace 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 20%;
+    border-color: rgb(0, 255, 255);
+    background-color: black;
+    text-decoration: underline;
+}
+img{
+    border-radius: 5%;
+    width: 390px;
+    height: 400px;
+}
+.image{
+    display: flex;
+    justify-content:space-evenly;
+    border-radius: 10%;
+}
+.Célebrités{
+    display: flex;
+    justify-content: space-evenly;
+    color: linen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: linen;
+}
+h3{
+    text-decoration: underline;
+}
+footer{
+    background-color: indigo;
+   
+}

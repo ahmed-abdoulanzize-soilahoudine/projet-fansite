@@ -1,0 +1,177 @@
+/* Style général du corps */
+body {
+    background-image: url("image/sunrise-3847679.jpg");
+    background-size: cover; /* Ajuste l'image pour couvrir toute la zone */
+    background-attachment: fixed; /* Fixe l'arrière-plan lors du défilement */
+    background-blend-mode: overlay;
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* Police par défaut */
+    color: #000; /* Couleur par défaut du texte */
+}
+
+/* Navigation principale */
+nav {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 15px;
+    transition: color 0.3s ease; /* Transition douce sur le survol */
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+/* Titres principaux */
+h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 5rem); /* Rend le titre responsive */
+    font-style: oblique;
+    font-family: monospace, 'Franklin Gothic Medium', Arial, sans-serif;
+    text-shadow: 5px 5px 10px rgba(34, 35, 37, 0.8);
+    margin: 50px 0 20px 0; /* Ajout de marges pour le positionnement */
+    padding: 5%;
+}
+
+h3 {
+    text-decoration: underline;
+    color: white;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Images */
+img {
+    width: 70%;
+    height: auto;
+    max-width: 450px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 10px rgba(5, 5, 5, 0.5);
+    transition: transform 0.3s ease; /* Animation douce au survol */
+}
+
+img:hover {
+    transform: scale(1.05); /* Effet zoom au survol */
+}
+.image{
+    display: flex;
+    justify-content:space-evenly;
+    border-radius: 10%;
+}
+
+/* Section des célébrités */
+.celebrites {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 5%;
+    align-items: flex-end;
+}
+
+.celebrites > article {
+
+    align-items: flex-end;
+    flex: 1 1 300px; /* S'adapte à la largeur disponible */
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.007); /* Fond légèrement transparent */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.celebrites > article:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+}
+
+/* Texte important */
+strong {
+    font-size: 1.2rem;
+    color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+/* Paragraphes */
+p {
+    color: rgb(34, 35, 37);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Pied de page */
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+
+.footer-bottom {
+    background-color: rgb(245, 243, 243);
+    font-size: 0.8rem;
+    color: black;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .celebrites {
+        padding: 2%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    .celebrites > article {
+        flex: 1 1 100%; /* Les articles prennent toute la largeur */
+    }
+}

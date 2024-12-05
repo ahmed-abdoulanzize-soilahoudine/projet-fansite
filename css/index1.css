@@ -1,0 +1,142 @@
+body {
+    background-image: url("image/sunrise-3847679.jpg");
+    background-size: 135%;
+    background-color: rgba(227, 227, 255, 0);
+    background-blend-mode: overlay;
+    margin: 0;
+   
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+nav a {
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: cyan;
+    text-decoration: none;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 5cqmax;
+    font-style: oblique;
+    font-family: monospace, 'Franklin Gothic Medium', Arial, sans-serif;
+    text-shadow: 5px 5px 10px rgb(34, 35, 37);
+    /* background-color: rgba(255, 255, 255, 0.315); */
+    padding: 5%;
+    text-decoration: none;
+}
+h3 {
+    text-decoration: underline;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+h2{
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-size-adjust: 0,5;
+}
+img{
+  width:100%;
+  height:100%;
+  max-width: 450px;
+  max-height: 440px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px 3px rgba(5, 5, 5, 0.664) ;
+}
+
+
+.celebrites {
+display: flex;
+
+padding: 8%;
+
+
+
+}
+.celebrites > article {
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 1%;
+    margin: 10px;
+    text-align: center;
+    /* border: 2px solid rgb(34, 35, 37); */
+    border-radius:2% ;
+    /* background-color: rgba(253, 253, 253, 0) */
+}
+strong{
+    font-size: 135%;
+     color: #0056b3
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    margin: 10px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: #ffffff;
+}
+
+
+.footer-bottom{
+    background-color: rgb(245, 243, 243);
+    font-size: -2cqmax;
+    color: black;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-top: 90px;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media screen and (max-width:401px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    article{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    header, footer {
+        padding: 30px;
+    }
+    
+}

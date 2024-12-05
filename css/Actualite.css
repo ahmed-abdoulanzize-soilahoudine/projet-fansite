@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212; 
+    color: #e0e0e0; 
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    background-image: url(jul-parcours-fortune-musique-.webp);
+    background-position: 50% 20%;
+    background-size: 1800px;
+    padding: 100px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    color: #3086f7;
+    margin: 0px;
+    font-size: 75px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav {
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3086f7; 
+}
+
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 3em;
+    color: #3086f7; 
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
+.content p {
+    color: #d0d0d0;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+img {
+    width: 1000px;
+}
+.content h3 {
+    color: #3086f7; 
+}
+footer {
+    background-color: #1f1f1f;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 45px;
+    border-top: 2px solid #333;
+}
